@@ -11,7 +11,6 @@
 }
 .nav{
     overflow-y: scroll;
-    height:85vh;
     margin-bottom: 60px;
 }
 .nav::-webkit-scrollbar{
@@ -23,6 +22,45 @@
     z-index: 88;
     width:70vw;
     right:0px;
+}
+.form-items-container{
+    border:1px solid #D3D4D8;
+    margin-top:11px;
+    padding:4px;
+    background:#ffffff;
+    position:relative;
+}
+.form-items-icon{
+    position:absolute;
+    right:5px;
+    top:10px;
+    font-size: 13px;
+    color: #8492A6!important;
+    font-size:17px;
+    color: #74788d;
+}
+*:focus{
+    -webkit-box-shadow: none!important;
+    box-shadow:none!important;
+}
+.auth-form{
+    position:absolute;
+    background:#14293C;
+    min-height:60vh;
+    max-height:92vh;
+    width:100vw;
+}
+.form-container{
+    position:absolute;
+    top:30vh;
+}
+.form-items-input{
+    border:none;
+    outline:none;
+    width:93%;
+    position:relative;
+    right:7%;
+    color: #8492A6;
 }
 *{
     font-family: 'Cairo', sans-serif;
