@@ -29,6 +29,30 @@ $('.navItem').on('click', (e) => {
     }
     menu.classList.toggle('show');
 });
+//chat
+$('.closeChat').on('click', function(){
+    $('#latestChats').addClass('d-none');
+    $('#conversation').removeClass('d-none');
+});
+$('.openchat').on('click', function(){
+    $('#latestChats').removeClass('d-none');
+    $('#conversation').addClass('d-none');
+});
+//chat
+// edit profile
+$('#leftItem').on('click', (e) => {
+    $('#rightItem').removeClass('activeRightTab');
+    $('#leftItem').addClass('activeLeftTab');
+    $('#editProfile').addClass('d-none');
+    $('#editPassword').removeClass('d-none');
+});
+$('#rightItem').on('click', (e) => {
+    $('#rightItem').addClass('activeRightTab');
+    $('#leftItem').removeClass('activeLeftTab');
+    $('#editProfile').removeClass('d-none');
+    $('#editPassword').addClass('d-none');
+});
+// edit profile
 $(document).ready(() => {
     $(window).on('resize', () => {
         $('aside').removeClass("thumb");
